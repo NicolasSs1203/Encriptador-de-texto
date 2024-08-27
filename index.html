@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="imagesEncriptador/Firefly%2020240826191511.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <img class="Logo"src="imagesEncriptador/Logo.png" alt="logo de alura"/>
+</header>
+<main>
+    <section class="encriptador">
+        <textarea id="textoArecibir" class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="encriptador-aviso">
+            <img src="imagesEncriptador/Frame%201.png" alt="Imagen Aviso" class="img-aviso">
+        </div>
+        <div class="encriptador-contenedor">
+            <button onclick="mostrarTextoEncriptado()" type="submit" class="btn-encriptar">Encriptar!</button>
+            <button onclick="mostrarTextoDesencriptado()" type="submit" class="btn-desencriptar">Desencriptar!</button>
+        </div>
+    </section>
+    <section class="tarjeta">
+        <div class="tarjeta-contenedor">
+            <img src="imagesEncriptador/Muñeco.png" alt="Imagen Muñeco con lupa" class="img-muñeco">
+            <p class="texto-uno">Ningún mensaje fue encontrado</p>
+            <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <textarea id="Resultado" type="mensaje" class="evaluar" readonly></textarea>
+        <button onclick="copiarTexto()" type="submit" id="bcopiar" class="btn-copiar">Copiar</button>
+    </section>
+</main>
+<footer>
+    <p class="copyright">&copy;Encriptador de texto - desarrollado por Nicolas Camacho</p>
+
+</footer>
+
+
+
+<script src="app.js" defer></script>
+</body>
+</html>
